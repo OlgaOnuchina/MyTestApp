@@ -8,13 +8,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.testapp.domain.lastDowntime;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecAdapter extends RecyclerView.Adapter<RecAdapter.DowntimeViewHolder> {
 
-    private ArrayList<RecyclerData> recyclerListData;
+    private List<lastDowntime> recyclerListData;
 
-    public RecAdapter(ArrayList<RecyclerData> recyclerListData) {
+    public RecAdapter(List<lastDowntime> recyclerListData) {
         this.recyclerListData = recyclerListData;
     }
 

@@ -3,7 +3,6 @@ package com.example.testapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,6 +11,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.testapp.domain.ForkliftUse;
+import com.example.testapp.domain.ForkliftUseImpl;
 
 import java.util.ArrayList;
 
@@ -27,12 +29,15 @@ public class ActivityDowntime extends AppCompatActivity implements View.OnClickL
     EditText comment;
     Button saveDowntime;
     Spinner reasons;
-    ArrayList reasonsList = SpinnerData.SpinnerData();
+    //ArrayList reasonsList = SpinnerData.SpinnerData();
+
+    private ForkliftUse forkliftUse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_downtime);
+        initRepo();
 
         start_downtime = findViewById(R.id.start_downtime);
         start_date_downtime = findViewById(R.id.start_date_downtime);
@@ -50,13 +55,17 @@ public class ActivityDowntime extends AppCompatActivity implements View.OnClickL
         reasons = findViewById(R.id.reasons);
 
         ArrayAdapter<String> adapter  =  new  ArrayAdapter<String>(
-                this, R.layout.spinner_design, reasonsList);
+                this, R.layout.spinner_design, forkliftUse.getReasonsList());
 
         adapter.setDropDownViewResource(R.layout.spinner_design);
 
         reasons.setAdapter(adapter);
 
 
+    }
+
+    private void initRepo() {
+        forkliftUse = new ForkliftUseImpl();
     }
 
 

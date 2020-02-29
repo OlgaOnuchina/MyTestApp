@@ -10,22 +10,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.testapp.domain.ForkliftUse;
+import com.example.testapp.domain.ForkliftUseImpl;
+import com.example.testapp.domain.lastDowntime;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class ActivityMenu extends AppCompatActivity implements View.OnClickListener {
 
     TextView text_info;
     Button add_downtime;
     RecyclerView recyclerView;
-    ArrayList recyclerListData = RecyclerData.getRecyclerData();
+
+    private ForkliftUse forkliftUse;
+    //ArrayList recyclerListData = RecyclerData.getRecyclerData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+        initRepo();
         text_info = findViewById(R.id.text_info);
-        text_info.setText("Автопогрузчик № 06 TOYOTA");
+        String infoForklift = forkliftUse.getInfoForklift();
+        text_info.setText(infoForklift);
         add_downtime = findViewById(R.id.add_downtime);
         add_downtime.setOnClickListener(this);
         recyclerView = findViewById(R.id.last_downtime);
@@ -34,11 +42,14 @@ public class ActivityMenu extends AppCompatActivity implements View.OnClickListe
 
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        List<lastDowntime> recyclerListData = forkliftUse.getLastDowntime();
         RecAdapter recAdapter = new RecAdapter(recyclerListData);
         recyclerView.setAdapter(recAdapter);
 
+    }
 
-
+    private void initRepo() {
+        forkliftUse = new ForkliftUseImpl();
     }
 
     @Override
