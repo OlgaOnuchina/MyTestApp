@@ -1,11 +1,11 @@
 package com.example.testapp.domain;
 
-public class lastDowntime {
+public class LastDowntime {
 
     private String description;
     private String period;
 
-    public lastDowntime(String description, String period){
+    public LastDowntime(String description, String period){
         this.description = description;
         this.period = period;
     }
@@ -17,5 +17,4 @@ public class lastDowntime {
     public String getPeriod(){
         return this.period;
     }
-
 }

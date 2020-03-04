@@ -5,12 +5,12 @@ import java.util.List;
 
 public interface ForkliftUse {
 
-    public List<String> getReasonsList();
+    List<String> getReasonsList();
 
-    public String getInfoForklift();
+    String getInfoForklift();
 
-    public List<lastDowntime> getLastDowntime();
+    List<LastDowntime> getLastDowntime();
 
-    public boolean addDowntime();
+    boolean addDowntime();
 
 }

@@ -8,17 +8,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.testapp.domain.lastDowntime;
+import com.example.testapp.domain.LastDowntime;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class RecAdapter extends RecyclerView.Adapter<RecAdapter.DowntimeViewHolder> {
+public class DowntimeAdapter extends RecyclerView.Adapter<DowntimeAdapter.DowntimeViewHolder> {
 
-    private List<lastDowntime> recyclerListData;
+    private List<LastDowntime> data;
 
-    public RecAdapter(List<lastDowntime> recyclerListData) {
-        this.recyclerListData = recyclerListData;
+    public DowntimeAdapter(List<LastDowntime> data) {
+        this.data = data;
     }
 
 
@@ -28,8 +27,8 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.DowntimeViewHold
         TextView period;
         public DowntimeViewHolder (View view){
             super(view);
-            desc = (TextView) view.findViewById(R.id.recInfoDowntime);
-            period = (TextView) view.findViewById(R.id.recPeriodDowntime);
+            desc = view.findViewById(R.id.recInfoDowntime);
+            period = view.findViewById(R.id.recPeriodDowntime);
         }
     }
 
@@ -43,14 +42,14 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.DowntimeViewHold
 
     @Override
     public void onBindViewHolder(@NonNull DowntimeViewHolder holder, int position) {
-        holder.desc.setText(recyclerListData.get(position).getDesc());
-        holder.period.setText(recyclerListData.get(position).getPeriod());
-
+        LastDowntime lastDowntime = data.get(position);
+        holder.desc.setText(lastDowntime.getDesc());
+        holder.period.setText(lastDowntime.getPeriod());
     }
 
     @Override
     public int getItemCount(){
-        return recyclerListData.size();
+        return data.size();
     }
 
 }

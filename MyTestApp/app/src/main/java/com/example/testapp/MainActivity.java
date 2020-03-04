@@ -9,7 +9,21 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.arellomobile.mvp.presenter.ProvidePresenter;
+import com.example.testapp.domain.ForkliftUseImpl;
+import com.example.testapp.presentation.MainActivityPresenter;
+import com.example.testapp.presentation.MainView;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, MainView {
+
+    @InjectPresenter
+    MainActivityPresenter presenter;
+
+    @ProvidePresenter
+    MainActivityPresenter providePresenter() {
+        return new MainActivityPresenter(new ForkliftUseImpl());
+    }
 
     TextView welcomeText;
     EditText userName;

@@ -12,13 +12,17 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.example.testapp.domain.ForkliftUse;
 import com.example.testapp.domain.ForkliftUseImpl;
+import com.example.testapp.presentation.DowntimeActivityPresenter;
+import com.example.testapp.presentation.DowntimeView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 
-public class ActivityDowntime extends AppCompatActivity implements View.OnClickListener {
+public class ActivityDowntime extends AppCompatActivity implements View.OnClickListener, DowntimeView {
 
     TextView start_downtime;
     EditText start_date_downtime;
@@ -29,15 +33,23 @@ public class ActivityDowntime extends AppCompatActivity implements View.OnClickL
     EditText comment;
     Button saveDowntime;
     Spinner reasons;
-    //ArrayList reasonsList = SpinnerData.SpinnerData();
+    ArrayAdapter<String> adapter;
+
+    @InjectPresenter
+    DowntimeActivityPresenter presenter;
+
+    @ProvidePresenter
+    DowntimeActivityPresenter providePresenter() {
+        return new DowntimeActivityPresenter(new ForkliftUseImpl());
+    }
 
     private ForkliftUse forkliftUse;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_downtime);
-        initRepo();
 
         start_downtime = findViewById(R.id.start_downtime);
         start_date_downtime = findViewById(R.id.start_date_downtime);
@@ -53,21 +65,7 @@ public class ActivityDowntime extends AppCompatActivity implements View.OnClickL
         saveDowntime = findViewById(R.id.saveDowntime);
         saveDowntime.setOnClickListener(this);
         reasons = findViewById(R.id.reasons);
-
-        ArrayAdapter<String> adapter  =  new  ArrayAdapter<String>(
-                this, R.layout.spinner_design, forkliftUse.getReasonsList());
-
-        adapter.setDropDownViewResource(R.layout.spinner_design);
-
-        reasons.setAdapter(adapter);
-
-
     }
-
-    private void initRepo() {
-        forkliftUse = new ForkliftUseImpl();
-    }
-
 
     @Override
     public void onClick(View v) {
@@ -79,8 +77,13 @@ public class ActivityDowntime extends AppCompatActivity implements View.OnClickL
                 break;
             default:
                 break;
-
         }
     }
 
+
+    @Override
+    public void setAdapter(List<String> reasonsList) {
+        adapter = new ArrayAdapter<String>(this, R.layout.spinner_design, reasonsList);
+        reasons.setAdapter(adapter);
+    }
 }

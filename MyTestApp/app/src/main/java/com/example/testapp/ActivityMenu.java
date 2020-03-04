@@ -10,47 +10,43 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.example.testapp.domain.ForkliftUse;
 import com.example.testapp.domain.ForkliftUseImpl;
-import com.example.testapp.domain.lastDowntime;
+import com.example.testapp.presentation.MenuActivityPresenter;
+import com.example.testapp.presentation.MenuView;
 
-import java.util.ArrayList;
-import java.util.List;
 
-public class ActivityMenu extends AppCompatActivity implements View.OnClickListener {
+public class ActivityMenu extends AppCompatActivity
+        implements View.OnClickListener, MenuView {
 
     TextView text_info;
     Button add_downtime;
     RecyclerView recyclerView;
 
+    @InjectPresenter
+    MenuActivityPresenter presenter;
+
+    @ProvidePresenter
+    MenuActivityPresenter providePresenter() {
+        return new MenuActivityPresenter(new ForkliftUseImpl());
+    }
+
     private ForkliftUse forkliftUse;
-    //ArrayList recyclerListData = RecyclerData.getRecyclerData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        initRepo();
         text_info = findViewById(R.id.text_info);
-        String infoForklift = forkliftUse.getInfoForklift();
-        text_info.setText(infoForklift);
         add_downtime = findViewById(R.id.add_downtime);
         add_downtime.setOnClickListener(this);
         recyclerView = findViewById(R.id.last_downtime);
-
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-
         recyclerView.setLayoutManager(linearLayoutManager);
-
-        List<lastDowntime> recyclerListData = forkliftUse.getLastDowntime();
-        RecAdapter recAdapter = new RecAdapter(recyclerListData);
-        recyclerView.setAdapter(recAdapter);
-
     }
 
-    private void initRepo() {
-        forkliftUse = new ForkliftUseImpl();
-    }
 
     @Override
     public void onClick(View v) {
@@ -62,5 +58,15 @@ public class ActivityMenu extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+    }
+
+    @Override
+    public void setInfoText(String text) {
+        text_info.setText(text);
+    }
+
+    @Override
+    public void setAdapter(DowntimeAdapter downtimeAdapter) {
+        recyclerView.setAdapter(downtimeAdapter);
     }
 }
