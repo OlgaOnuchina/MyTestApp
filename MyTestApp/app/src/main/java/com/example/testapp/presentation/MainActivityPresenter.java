@@ -4,16 +4,15 @@ import android.view.View;
 
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
-import com.example.testapp.domain.ForkliftUse;
+import com.example.testapp.domain.AuthorizationUse;
 
 @InjectViewState
 public class MainActivityPresenter extends MvpPresenter<MainView> {
 
-    private ForkliftUse forkliftUse;
+    private AuthorizationUse authorizationUse;
 
-    public MainActivityPresenter(ForkliftUse forkliftUse){
-        this.forkliftUse = forkliftUse;
+    public MainActivityPresenter(AuthorizationUse authorizationUse){
+        this.authorizationUse = authorizationUse;
     }
-
 
 }

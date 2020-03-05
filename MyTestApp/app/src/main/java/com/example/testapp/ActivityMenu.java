@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.arellomobile.mvp.presenter.InjectPresenter;
@@ -24,6 +25,7 @@ public class ActivityMenu extends AppCompatActivity
     TextView text_info;
     Button add_downtime;
     RecyclerView recyclerView;
+    ProgressBar progressBar;
 
     @InjectPresenter
     MenuActivityPresenter presenter;
@@ -45,6 +47,7 @@ public class ActivityMenu extends AppCompatActivity
         recyclerView = findViewById(R.id.last_downtime);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
+        progressBar = findViewById(R.id.progressBar);
     }
 
 

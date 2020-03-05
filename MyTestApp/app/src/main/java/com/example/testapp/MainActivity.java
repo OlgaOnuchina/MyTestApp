@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.arellomobile.mvp.presenter.ProvidePresenter;
-import com.example.testapp.domain.ForkliftUseImpl;
+import com.example.testapp.domain.AuthorizationUseImpl;
 import com.example.testapp.presentation.MainActivityPresenter;
 import com.example.testapp.presentation.MainView;
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @ProvidePresenter
     MainActivityPresenter providePresenter() {
-        return new MainActivityPresenter(new ForkliftUseImpl());
+        return new MainActivityPresenter(new AuthorizationUseImpl());
     }
 
     TextView welcomeText;
