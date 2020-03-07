@@ -1,7 +1,5 @@
 package com.example.testapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -12,6 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.example.testapp.domain.ForkliftUse;
@@ -22,7 +21,7 @@ import com.example.testapp.presentation.DowntimeView;
 import java.util.List;
 
 
-public class ActivityDowntime extends AppCompatActivity implements View.OnClickListener, DowntimeView {
+public class ActivityDowntime extends MvpAppCompatActivity implements View.OnClickListener, DowntimeView {
 
     TextView start_downtime;
     EditText start_date_downtime;

@@ -1,11 +1,11 @@
 package com.example.testapp.domain;
 
-public class LastDowntime {
+public class LastDowntimeUseCaseEntity {
 
     private String description;
     private String period;
 
-    public LastDowntime(String description, String period){
+    public LastDowntimeUseCaseEntity(String description, String period){
         this.description = description;
         this.period = period;
     }

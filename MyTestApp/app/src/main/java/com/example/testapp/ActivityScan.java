@@ -9,13 +9,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.example.testapp.domain.ForkliftUseImpl;
 import com.example.testapp.presentation.ScanActivityPresenter;
 import com.example.testapp.presentation.ScanView;
 
-public class ActivityScan extends AppCompatActivity implements View.OnClickListener, ScanView {
+public class ActivityScan extends MvpAppCompatActivity implements View.OnClickListener, ScanView {
 
     @InjectPresenter
     ScanActivityPresenter presenter;

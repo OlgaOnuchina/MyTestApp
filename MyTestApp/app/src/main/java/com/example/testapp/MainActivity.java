@@ -1,7 +1,5 @@
 package com.example.testapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,20 +7,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.arellomobile.mvp.presenter.ProvidePresenter;
-import com.example.testapp.domain.AuthorizationUseImpl;
 import com.example.testapp.presentation.MainActivityPresenter;
 import com.example.testapp.presentation.MainView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, MainView {
+public class MainActivity extends MvpAppCompatActivity implements View.OnClickListener, MainView {
 
     @InjectPresenter
     MainActivityPresenter presenter;
 
     @ProvidePresenter
     MainActivityPresenter providePresenter() {
-        return new MainActivityPresenter(new AuthorizationUseImpl());
+        return new MainActivityPresenter();
     }
 
     TextView welcomeText;

@@ -1,9 +1,5 @@
 package com.example.testapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,18 +8,22 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.example.testapp.domain.ForkliftUse;
 import com.example.testapp.domain.ForkliftUseImpl;
-import com.example.testapp.domain.LastDowntime;
+import com.example.testapp.domain.LastDowntimeUseCaseEntity;
 import com.example.testapp.presentation.MenuActivityPresenter;
 import com.example.testapp.presentation.MenuView;
 
 import java.util.List;
 
 
-public class ActivityMenu extends AppCompatActivity
+public class ActivityMenu extends MvpAppCompatActivity
         implements View.OnClickListener, MenuView {
 
     TextView text_info;
@@ -62,6 +62,7 @@ public class ActivityMenu extends AppCompatActivity
             case R.id.add_downtime:
                 Intent intent = new Intent(this, ActivityDowntime.class);
                 startActivity(intent);
+
                 break;
             default:
                 break;
@@ -76,8 +77,8 @@ public class ActivityMenu extends AppCompatActivity
     }
 
     @Override
-    public void initRecycler(List<LastDowntime> listLastDowntime) {
-        DowntimeAdapter downtimeAdapter = new DowntimeAdapter(listLastDowntime);
+    public void initRecycler(List<LastDowntimeUseCaseEntity> listLastDowntimeUseCaseEntity) {
+        DowntimeAdapter downtimeAdapter = new DowntimeAdapter(listLastDowntimeUseCaseEntity);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(downtimeAdapter);
     }

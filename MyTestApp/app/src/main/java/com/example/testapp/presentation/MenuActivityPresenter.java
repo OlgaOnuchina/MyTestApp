@@ -6,7 +6,7 @@ import android.util.Log;
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
 import com.example.testapp.domain.ForkliftUse;
-import com.example.testapp.domain.LastDowntime;
+import com.example.testapp.domain.LastDowntimeUseCaseEntity;
 
 import java.util.List;
 
@@ -34,7 +34,7 @@ public class MenuActivityPresenter extends MvpPresenter<MenuView> {
     }
 
     private void getLastDowntime(){
-        List<LastDowntime> listLastDowntime = forkliftUse.getLastDowntime();
+        List<LastDowntimeUseCaseEntity> listLastDowntime = forkliftUse.getLastDowntime();
         getViewState().initRecycler(listLastDowntime);
     }
 

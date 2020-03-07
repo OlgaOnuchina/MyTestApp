@@ -9,7 +9,7 @@ public interface ForkliftUse {
 
     String getInfoForklift();
 
-    List<LastDowntime> getLastDowntime();
+    List<LastDowntimeUseCaseEntity> getLastDowntime();
 
     boolean addDowntime();
 

@@ -8,15 +8,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.testapp.domain.LastDowntime;
+import com.example.testapp.domain.LastDowntimeUseCaseEntity;
 
 import java.util.List;
 
 public class DowntimeAdapter extends RecyclerView.Adapter<DowntimeAdapter.DowntimeViewHolder> {
 
-    private List<LastDowntime> data;
+    private List<LastDowntimeUseCaseEntity> data;
 
-    public DowntimeAdapter(List<LastDowntime> data) {
+    public DowntimeAdapter(List<LastDowntimeUseCaseEntity> data) {
         this.data = data;
     }
 
@@ -42,9 +42,9 @@ public class DowntimeAdapter extends RecyclerView.Adapter<DowntimeAdapter.Downti
 
     @Override
     public void onBindViewHolder(@NonNull DowntimeViewHolder holder, int position) {
-        LastDowntime lastDowntime = data.get(position);
-        holder.desc.setText(lastDowntime.getDesc());
-        holder.period.setText(lastDowntime.getPeriod());
+        LastDowntimeUseCaseEntity lastDowntimeUseCaseEntity = data.get(position);
+        holder.desc.setText(lastDowntimeUseCaseEntity.getDesc());
+        holder.period.setText(lastDowntimeUseCaseEntity.getPeriod());
     }
 
     @Override
