@@ -1,9 +1,11 @@
 package com.example.testapp.presentation;
 
 import com.arellomobile.mvp.MvpView;
-import com.example.testapp.DowntimeAdapter;
+import com.example.testapp.domain.LastDowntime;
+
+import java.util.List;
 
 public interface MenuView extends MvpView {
     void setInfoText(String text);
-    void setAdapter(DowntimeAdapter downtimeAdapter);
+    void initRecycler(List<LastDowntime> listLastDowntime);
 }

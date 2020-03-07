@@ -45,7 +45,6 @@ public class ActivityDowntime extends AppCompatActivity implements View.OnClickL
 
     private ForkliftUse forkliftUse;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

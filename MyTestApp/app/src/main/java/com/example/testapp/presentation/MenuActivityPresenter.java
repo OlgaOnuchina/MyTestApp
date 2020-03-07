@@ -1,9 +1,10 @@
 package com.example.testapp.presentation;
 
 
+import android.util.Log;
+
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
-import com.example.testapp.DowntimeAdapter;
 import com.example.testapp.domain.ForkliftUse;
 import com.example.testapp.domain.LastDowntime;
 
@@ -13,19 +14,28 @@ import java.util.List;
 public class MenuActivityPresenter extends MvpPresenter<MenuView> {
 
     private ForkliftUse forkliftUse;
+    private static final String TAG = "myLogs";
 
     public MenuActivityPresenter(ForkliftUse forkliftUse){
         this.forkliftUse = forkliftUse;
     }
 
-    public void getTextInfo(){
+    @Override
+    protected void onFirstViewAttach() {
+        super.onFirstViewAttach();
+        Log.d(TAG, "onFirstViewAttach");
+        getTextInfo();
+        getLastDowntime();
+    }
+
+    private void getTextInfo(){
         String infoForklift = forkliftUse.getInfoForklift();
         getViewState().setInfoText(infoForklift);
     }
 
-    public void getLastDowntime(){
+    private void getLastDowntime(){
         List<LastDowntime> listLastDowntime = forkliftUse.getLastDowntime();
-        DowntimeAdapter downtimeAdapter = new DowntimeAdapter(listLastDowntime);
-        getViewState().setAdapter(downtimeAdapter);
+        getViewState().initRecycler(listLastDowntime);
     }
+
 }

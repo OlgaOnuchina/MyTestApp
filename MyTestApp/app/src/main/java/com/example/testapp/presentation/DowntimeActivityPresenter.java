@@ -16,7 +16,12 @@ public class DowntimeActivityPresenter extends MvpPresenter<DowntimeView> {
         this.forkliftUse = forkliftUse;
     }
 
-    public void getReasonsList(){
+    @Override
+    protected void onFirstViewAttach(){
+        getReasonsList();
+    }
+
+    private void getReasonsList(){
         List<String> reasonsList = forkliftUse.getReasonsList();
         getViewState().setAdapter(reasonsList);
     }
