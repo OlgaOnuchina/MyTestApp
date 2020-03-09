@@ -8,6 +8,16 @@ import com.sample.core.repository.InformingRepository;
 import io.reactivex.Observable;
 
 public class InformingRepositoryImpl implements InformingRepository {
+
+    private static InformingRepositoryImpl InformingRepository;
+
+    public static InformingRepository instance() {
+        if(InformingRepository == null) {
+            InformingRepository = new InformingRepositoryImpl();
+        }
+        return InformingRepository;
+    }
+
     @Override
     public Observable<InfoForklift> getInfo(String idForklift) {
         return Observable.just(new InfoForklift("test"));

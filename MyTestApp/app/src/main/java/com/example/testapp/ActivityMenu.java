@@ -52,8 +52,6 @@ public class ActivityMenu extends MvpAppCompatActivity
         add_downtime.setOnClickListener(this);
         recyclerView = findViewById(R.id.last_downtime);
         progressBar = findViewById(R.id.progressBar);
-        Log.d(TAG, "onCreate");
-        Log.d(TAG, String.valueOf(presenter));
     }
 
     @Override
@@ -62,7 +60,6 @@ public class ActivityMenu extends MvpAppCompatActivity
             case R.id.add_downtime:
                 Intent intent = new Intent(this, ActivityDowntime.class);
                 startActivity(intent);
-
                 break;
             default:
                 break;
@@ -71,8 +68,6 @@ public class ActivityMenu extends MvpAppCompatActivity
 
     @Override
     public void setInfoText(String text) {
-
-        Log.d(TAG, "set info");
         text_info.setText(text);
     }
 
@@ -81,5 +76,6 @@ public class ActivityMenu extends MvpAppCompatActivity
         DowntimeAdapter downtimeAdapter = new DowntimeAdapter(listLastDowntimeUseCaseEntity);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(downtimeAdapter);
+        progressBar.setVisibility(View.GONE);
     }
 }
