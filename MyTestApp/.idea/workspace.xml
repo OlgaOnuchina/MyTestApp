@@ -11,65 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57da430b-8f76-461d-9e20-1dfb19d149ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/InformingUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/LoginUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/impl/InformingUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/impl/LoginUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/androidTest/java/com/sample/core/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/Core.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/dto/InfoForklift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/dto/LastDowntime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/dto/ReasonDowntime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/dto/ResultLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/InformingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/LoginRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/impl/InformingRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/impl/LoginRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/sample/core/ExampleUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_1_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityDowntime.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityDowntime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityScan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/DowntimeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/DowntimeAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/AuthorizationUse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/AuthorizationUseImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/lastDowntime.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/LastDowntimeUseCaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MainActivityPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MainActivityPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuActivityPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuActivityPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -323,61 +273,33 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1583587947583">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583587947583" />
-    <state x="200" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583584586767">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="200" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1583584586767" />
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583589024716">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583589024716" />
-    <state x="496" y="106" key="AndroidProcessChooserDialog" timestamp="1583581741925">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="496" y="106" key="AndroidProcessChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1583581741925" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1583588433704">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583588433704" />
-    <state width="843" height="226" key="GridCell.Tab.0.bottom" timestamp="1583581945556">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="843" height="226" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583581945556" />
-    <state width="843" height="226" key="GridCell.Tab.0.center" timestamp="1583581945556">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="843" height="226" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583581945556" />
-    <state width="843" height="226" key="GridCell.Tab.0.left" timestamp="1583581945556">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="843" height="226" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583581945556" />
-    <state width="843" height="226" key="GridCell.Tab.0.right" timestamp="1583581945556">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="843" height="226" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583581945556" />
-    <state width="610" height="200" key="GridCell.Tab.1.bottom" timestamp="1583581907085">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="610" height="200" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583581907085" />
-    <state width="610" height="200" key="GridCell.Tab.1.center" timestamp="1583581907085">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="610" height="200" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583581907085" />
-    <state width="610" height="200" key="GridCell.Tab.1.left" timestamp="1583581907085">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="610" height="200" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583581907085" />
-    <state width="610" height="200" key="GridCell.Tab.1.right" timestamp="1583581907085">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="610" height="200" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583581907085" />
-    <state x="334" y="72" width="612" height="536" key="find.popup" timestamp="1583581715612">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1583581715612" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" />
+    <state x="200" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" />
+    <state x="200" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" />
+    <state x="496" y="106" key="AndroidProcessChooserDialog" />
+    <state x="496" y="106" key="AndroidProcessChooserDialog/0.0.1280.680@0.0.1280.680" />
+    <state x="421" y="95" key="FileChooserDialogImpl" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" />
+    <state width="843" height="226" key="GridCell.Tab.0.bottom" />
+    <state width="843" height="226" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" />
+    <state width="843" height="226" key="GridCell.Tab.0.center" />
+    <state width="843" height="226" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" />
+    <state width="843" height="226" key="GridCell.Tab.0.left" />
+    <state width="843" height="226" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" />
+    <state width="843" height="226" key="GridCell.Tab.0.right" />
+    <state width="843" height="226" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" />
+    <state width="610" height="200" key="GridCell.Tab.1.bottom" />
+    <state width="610" height="200" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" />
+    <state width="610" height="200" key="GridCell.Tab.1.center" />
+    <state width="610" height="200" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" />
+    <state width="610" height="200" key="GridCell.Tab.1.left" />
+    <state width="610" height="200" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" />
+    <state width="610" height="200" key="GridCell.Tab.1.right" />
+    <state width="610" height="200" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" />
+    <state x="334" y="72" width="612" height="536" key="find.popup" />
+    <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" />
   </component>
 </project>
