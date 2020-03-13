@@ -2,7 +2,6 @@ package com.example.testapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -15,8 +14,8 @@ import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.example.testapp.domain.ForkliftUse;
-import com.example.testapp.domain.ForkliftUseImpl;
-import com.example.testapp.domain.LastDowntimeUseCaseEntity;
+import com.example.testapp.domain.print.LastDowntimePrint;
+import com.example.testapp.domain.impl.InformingUseCaseImpl;
 import com.example.testapp.presentation.MenuActivityPresenter;
 import com.example.testapp.presentation.MenuView;
 
@@ -31,14 +30,12 @@ public class ActivityMenu extends MvpAppCompatActivity
     RecyclerView recyclerView;
     ProgressBar progressBar;
 
-    private static final String TAG = "myLogs";
-
     @InjectPresenter
     MenuActivityPresenter presenter;
 
     @ProvidePresenter
     MenuActivityPresenter providePresenter() {
-        return new MenuActivityPresenter(new ForkliftUseImpl());
+        return new MenuActivityPresenter(new InformingUseCaseImpl());
     }
 
     private ForkliftUse forkliftUse;
@@ -72,8 +69,8 @@ public class ActivityMenu extends MvpAppCompatActivity
     }
 
     @Override
-    public void initRecycler(List<LastDowntimeUseCaseEntity> listLastDowntimeUseCaseEntity) {
-        DowntimeAdapter downtimeAdapter = new DowntimeAdapter(listLastDowntimeUseCaseEntity);
+    public void initRecycler(List<LastDowntimePrint> listLastDowntimePrint) {
+        DowntimeAdapter downtimeAdapter = new DowntimeAdapter(listLastDowntimePrint);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(downtimeAdapter);
         progressBar.setVisibility(View.GONE);

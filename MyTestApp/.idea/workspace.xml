@@ -11,15 +11,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57da430b-8f76-461d-9e20-1dfb19d149ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/mapper/InfoForkliftMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/mapper/LastDowntimeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/mapper/ReasonDowntimeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/mapper/ResultLoginMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/print/InfoForkliftPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/print/ReasonDowntimePrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/print/ResultLoginPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/DowntimeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_1_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/ActivityMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/DowntimeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/DowntimeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/ForkliftUseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/LastDowntimeUseCaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/print/LastDowntimePrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/impl/InformingUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/domain/impl/InformingUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuActivityPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuActivityPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/testapp/presentation/MenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/sample/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/sample/core/dto/ResultLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/dto/ResultLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/InformingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/InformingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/impl/InformingRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/impl/InformingRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/impl/LoginRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/sample/core/repository/impl/LoginRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +67,7 @@
     </option>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\Users\user\Documents\GitHub\MyTestApp\MyKeys.jks" />
+    <option name="KEY_STORE_PATH" value="C:\Users\user\Documents\GitHub\MyKeys.jks" />
     <option name="KEY_ALIAS" value="key0" />
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
@@ -65,20 +83,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
     <property name="DEBUGGABLE_DEVICE" value="xiaomi-redmi_6-17a9b89f7d26" />
     <property name="DEBUGGABLE_PROCESS" value="com.example.testapp" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="emulator-5554" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-12T08:55:45.377Z" />
     <property name="ExportApk.ApkPath" value="C:\Users\user\Documents\GitHub\MyTestApp\MyTestApp\app\release" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="SelectDeploymentTargetsDialog.selectedDevices" value="Pixel_2_API_R" />
+    <property name="SelectDeploymentTargetsDialog.selectedDevices" value="emulator-5554" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Telegram Desktop/TestApp11/TestApp11" />
     <property name="memory.settings.postsync.last.time.stamp" value="1583581202911" />
-    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -89,18 +110,19 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.testapp.domain" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\OnuchinaOS\AndroidStudioProjects\MyTestApp\app\src\main\res\layout" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.example.testapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.testapp.domain.print" />
       <recent name="com.example.testapp.presentation" />
       <recent name="com.example.testapp" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\OnuchinaOS\AndroidStudioProjects\MyTestApp\app\src\main\res\layout" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.testapp.domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -124,7 +146,7 @@
       </method>
     </configuration>
     <configuration name="TestApp-app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="TestApp-app" />
+      <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -180,7 +202,7 @@
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="-r -t" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -225,6 +247,10 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Android App.TestApp-app" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -237,6 +263,14 @@
       <option name="presentableId" value="Default" />
       <updated>1582212871629</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ничего особенного">
+      <created>1583997794396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583997794396</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,6 +305,8 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/MyTestApp" />
     </ignored-roots>
+    <MESSAGE value="Ничего особенного" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ничего особенного" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" />

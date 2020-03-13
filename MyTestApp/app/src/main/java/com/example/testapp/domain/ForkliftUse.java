@@ -1,6 +1,8 @@
 package com.example.testapp.domain;
 
 
+import com.example.testapp.domain.print.LastDowntimePrint;
+
 import java.util.List;
 
 public interface ForkliftUse {
@@ -9,7 +11,7 @@ public interface ForkliftUse {
 
     String getInfoForklift();
 
-    List<LastDowntimeUseCaseEntity> getLastDowntime();
+    List<LastDowntimePrint> getLastDowntime();
 
     boolean addDowntime();
 

@@ -1,6 +1,8 @@
 package com.example.testapp.domain.impl;
 
 import com.example.testapp.domain.InformingUseCase;
+import com.example.testapp.domain.mapper.InfoForkliftMapper;
+import com.example.testapp.domain.print.InfoForkliftPrint;
 import com.sample.core.dto.InfoForklift;
 import com.sample.core.dto.LastDowntime;
 import com.sample.core.dto.ReasonDowntime;
@@ -11,15 +13,23 @@ import io.reactivex.Observable;
 
 public class InformingUseCaseImpl implements InformingUseCase {
 
-    private final InformingRepository InformingRepository;
+    private final InformingRepository informingRepository;
+    private final InfoForkliftMapper infoForkliftMapper;
 
     public InformingUseCaseImpl() {
-        this.InformingRepository = InformingRepositoryImpl.instance();
+        this.informingRepository = InformingRepositoryImpl.instance();
+        infoForkliftMapper = new InfoForkliftMapper();
     }
 
     @Override
     public Observable<InfoForklift> getInfo(String idForklift) {
-        return Observable.just(new InfoForklift("test"));
+         return informingRepository.getInfo(idForklift).map();
+
+        //return Observable.just(new InfoForklift("test"));
+    }
+
+    private InfoForkliftPrint map(InfoForklift item){
+        return infoForkliftMapper.map(item);
     }
 
     @Override
